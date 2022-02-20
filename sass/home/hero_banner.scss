@@ -1,0 +1,34 @@
+@use '../index' as v;
+
+.hero-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 44px 34px 58px 34px;
+  margin-bottom: 48px;
+  background-color: rgb(237, 236, 236);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1;
+
+  h2 {
+    font-size: 26px;
+    padding: 0 42px;
+    text-align: center;
+    word-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+    color: rgb(90, 90, 90);
+  }
+  div {
+    padding: 14px 21px;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(50deg, v.$secondary-color 100%, white 80%);
+    color: white;
+  }
+}

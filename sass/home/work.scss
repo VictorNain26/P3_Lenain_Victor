@@ -1,0 +1,47 @@
+@use '../index' as v;
+
+.work-container {
+  padding-bottom: 54px;
+  h2 {
+    margin-left: 16px;
+    margin-bottom: 21px;
+  }
+}
+
+.work-etape {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 64px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  border-radius: 18px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(237, 236, 236);
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: v.$primary-color;
+    color: white;
+    font-size: 12px;
+  }
+
+  i {
+    margin-left: 32px;
+    font-size: 18px;
+    color: grey;
+  }
+
+  p {
+    margin-left: 18px;
+  }
+}

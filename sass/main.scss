@@ -1,0 +1,17 @@
+// Global Configuration
+@use './normalize';
+@use './index' as v;
+
+//Global Layout
+@use './layout/header';
+@use './layout/footer';
+
+// HomePage
+@use './home/geo';
+@use './home/hero_banner';
+@use './home/work';
+@use './home/restaurant';
+
+body {
+  font-family: v.$roboto;
+}

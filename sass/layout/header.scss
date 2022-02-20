@@ -1,0 +1,15 @@
+@use '../index' as v;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0 6px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  z-index: 1;
+  h1 {
+    font-weight: lighter;
+    font-family: v.$shrikhand;
+  }
+}
