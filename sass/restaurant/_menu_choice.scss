@@ -1,0 +1,99 @@
+@use '../index' as v;
+
+.menu-choice {
+  display: flex;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(18px);
+  opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    animation:  scrollDisplay 0.7s 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(3) {
+    animation:  scrollDisplay 0.7s 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(4) {
+    animation:  scrollDisplay 0.7s 0.4s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(5) {
+    animation:  scrollDisplay 0.7s 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .menu-choice-title {
+    width: 100%;
+    margin: 10px 12px;
+    overflow: hidden;
+    h4 {
+      font-size: 18px;
+      font-weight: 550;
+      margin: 4px 0;
+    }
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: rgba(0, 0, 0, 0.596);
+    }
+  }
+
+  .menu-choice-price {
+    margin: 10px 12px;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .menu-choice-choosed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 0px;
+    background-color: v.$tertiary-color;
+    border-radius: 0 14px 14px 0;
+    transition: width 0.8s ease;
+
+    .menu-choice-choosed-checked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: white;
+      color: v.$tertiary-color;
+    }
+  }
+
+  &:hover > .menu-choice-choosed {
+    width: 100px;
+
+    .menu-choice-choosed-checked {
+      animation:  checkedRotate 0.7s ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes checkedRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scrollDisplay {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

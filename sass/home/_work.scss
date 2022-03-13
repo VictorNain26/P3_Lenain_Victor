@@ -1,11 +1,23 @@
 @use '../index' as v;
 
 .work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 54px;
   h2 {
+    align-self: flex-start;
     margin-left: 16px;
     margin-bottom: 21px;
   }
+}
+
+.work-etape-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .work-etape {
@@ -13,13 +25,13 @@
   position: relative;
   flex-direction: row;
   align-items: center;
-  width: 90%;
-  height: 64px;
-  margin: 0 auto;
+  width: 87%;
+  height: 74px;
   margin-bottom: 16px;
   border-radius: 18px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: rgb(237, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
 
   div {
     display: flex;
@@ -36,12 +48,23 @@
   }
 
   i {
+    width: 24px;
     margin-left: 32px;
-    font-size: 18px;
+    font-size: 19px;
     color: grey;
   }
 
   p {
-    margin-left: 18px;
+    font-size: 16px;
+    font-weight: 550;
+    margin-left: 26px;
+  }
+
+  &:hover {
+    background-color:#9256dc2c;
+  }
+
+  &:hover > i {
+    color: v.$primary-color;
   }
 }

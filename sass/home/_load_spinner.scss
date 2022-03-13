@@ -1,0 +1,95 @@
+@use '../index' as v;
+
+.load-spinner {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: v.$tertiary-color;
+  animation: hideAnimation 0.4s ease-in 0s;
+  animation-fill-mode: forwards;
+
+  .logo {
+    font-size: 48px;
+    position: absolute;
+    top: 200px;
+  }
+}
+
+.load-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  height: 100%;
+  width: 200px;
+  .load-spinner-item {
+    width: 0;
+    height: 0;
+    margin: 0 2px;
+    border-radius: 14px;
+    background-color: v.$primary-color;
+    animation: dotAnimation 1.5s 2 linear 0.5s;
+
+    &:first-child {
+      background-color: v.$primary-color;
+      animation: dotAnimation 1.5s 2 linear 0s;
+    }
+
+    &:nth-child(2n) {
+      background-color: v.$secondary-color;
+      animation: dotAnimation 1.5s 2 linear 0.25s;
+    }
+  }
+}
+
+.body {
+  overflow: hidden;
+  animation:  stopScroll 0s ease-in 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dotAnimation {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  30% {
+    width: 14px;
+    height: 14px;
+  }
+
+  60%,
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes stopScroll {
+  to {
+    overflow: scroll;
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    z-index: 10;
+    opacity: 1;
+  }
+
+  30% {
+    z-index: 10;
+    opacity: 0;
+  }
+
+  60%,
+  100% {
+    z-index: -10;
+    opacity: 0;
+  }
+}

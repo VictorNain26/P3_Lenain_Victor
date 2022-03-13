@@ -7,11 +7,19 @@
 @use './layout/footer';
 
 // HomePage
-@use './home/geo';
-@use './home/hero_banner';
-@use './home/work';
-@use './home/restaurant';
+@use './home/home_main';
+
+// RestaurantPage
+@use './restaurant/restaurant_main';
+
+//responsive
+@use './responsive/main';
 
 body {
   font-family: v.$roboto;
+}
+
+.logo {
+  font-weight: lighter;
+  font-family: v.$shrikhand;
 }
