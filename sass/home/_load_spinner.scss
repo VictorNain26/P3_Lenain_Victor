@@ -9,7 +9,7 @@
   height: 100%;
   z-index: 10;
   background-color: v.$tertiary-color;
-  animation: hideAnimation 0.4s ease-in 0s;
+  animation: hideAnimation 0.4s ease-in 3s;
   animation-fill-mode: forwards;
 
   .logo {
