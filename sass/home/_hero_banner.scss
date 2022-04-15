@@ -33,6 +33,7 @@
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
     color: white;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background-color: rgb(255, 200, 211);
