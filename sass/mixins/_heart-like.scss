@@ -6,7 +6,7 @@
     font-size: 24px;
     right: $pourcent-right;
     opacity: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.4s ease;
     color: v.$secondary-color;
     z-index: 0;
   }
@@ -17,7 +17,7 @@
     position: absolute;
     right: $pourcent-right;
     font-size: 24px;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.4s ease;
     z-index: 1;
 
     &:hover {
