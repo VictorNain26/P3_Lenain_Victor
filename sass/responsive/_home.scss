@@ -1,7 +1,7 @@
 @media (min-width: 992px) {
-// Fonctionnement
+  // Fonctionnement
   .work-container {
-    width: 1400px;
+    width: 95%;
     margin: 0 auto;
 
     h2 {
@@ -20,8 +20,9 @@
   }
   // Restaurants
   .restaurant-container {
-    width: 1400px;
+    width: 95%;
     margin: 0 auto;
+
     h2 {
       margin-left: 0;
     }
@@ -31,10 +32,10 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+
     .restaurant-card {
       width: 48.5%;
       margin-right: 14px;
     }
   }
-
 }
