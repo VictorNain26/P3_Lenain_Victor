@@ -1,0 +1,31 @@
+@use '../index.scss' as v;
+
+@mixin color($pourcent-right) {
+  .fas {
+    position: absolute;
+    font-size: 24px;
+    right: $pourcent-right;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    color: v.$secondary-color;
+    z-index: 0;
+  }
+}
+
+@mixin empty($pourcent-right) {
+  .far {
+    position: absolute;
+    right: $pourcent-right;
+    font-size: 24px;
+    transition: opacity 0.6s ease;
+    z-index: 1;
+
+    &:hover {
+      opacity: 0;
+    }
+
+    &:hover + .fas {
+      opacity: 1;
+    }
+  }
+}

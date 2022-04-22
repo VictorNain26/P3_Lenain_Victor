@@ -1,6 +1,7 @@
 // Global Configuration
 @use './normalize';
-@use './index' as v;
+@use './variable/variables' as v;
+@use './mixins/heart-like' as heart;
 
 //Global Layout
 @use './layout/header';
