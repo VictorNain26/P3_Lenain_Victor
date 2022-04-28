@@ -24,6 +24,10 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 
+    a {
+      color: white;
+    }
+
     &:hover {
       transform: translate(8px);
     }
