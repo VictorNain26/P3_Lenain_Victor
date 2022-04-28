@@ -24,12 +24,13 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 
-    #mailto {
-      color: white;
-    }
 
     &:hover {
       transform: translate(8px);
     }
   }
+}
+
+#mailto {
+  color: white;
 }
