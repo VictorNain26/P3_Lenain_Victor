@@ -29,8 +29,15 @@ footer {
       transform: translate(8px);
     }
   }
-}
 
-#mailto {
-  color: white;
+  a {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+    &:hover {
+      transform: translate(8px);
+    }
+  }
 }
