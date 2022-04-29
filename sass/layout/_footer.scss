@@ -24,18 +24,9 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 
-
-    &:hover {
-      transform: translate(8px);
+    a {
+      color: white;
     }
-  }
-
-  a {
-    color: white;
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
 
     &:hover {
       transform: translate(8px);
